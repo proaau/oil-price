@@ -1,37 +1,48 @@
-source_group,publication,scenario,year,price_usd_per_bbl,price_basis,notes
-WEO2024,IEA World Energy Outlook 2024,STEPS,2023,82,USD (MER, 2023),IEA crude oil
-WEO2024,IEA World Energy Outlook 2024,STEPS,2030,79,USD (MER, 2023),IEA crude oil
-WEO2024,IEA World Energy Outlook 2024,STEPS,2040,77,USD (MER, 2023),IEA crude oil
-WEO2024,IEA World Energy Outlook 2024,STEPS,2050,75,USD (MER, 2023),IEA crude oil
-WEO2024,IEA World Energy Outlook 2024,APS,2030,72,USD (MER, 2023),IEA crude oil
-WEO2024,IEA World Energy Outlook 2024,APS,2040,63,USD (MER, 2023),IEA crude oil
-WEO2024,IEA World Energy Outlook 2024,APS,2050,58,USD (MER, 2023),IEA crude oil
-WEO2024,IEA World Energy Outlook 2024,NZE,2030,42,USD (MER, 2023),IEA crude oil
-WEO2024,IEA World Energy Outlook 2024,NZE,2040,30,USD (MER, 2023),IEA crude oil
-WEO2024,IEA World Energy Outlook 2024,NZE,2050,25,USD (MER, 2023),IEA crude oil
-WEO2025,IEA World Energy Outlook 2025,CPS,2024,79,USD (MER, 2024),IEA crude oil
-WEO2025,IEA World Energy Outlook 2025,CPS,2035,89,USD (MER, 2024),IEA crude oil
-WEO2025,IEA World Energy Outlook 2025,CPS,2050,106,USD (MER, 2024),IEA crude oil
-WEO2025,IEA World Energy Outlook 2025,STEPS,2035,80,USD (MER, 2024),IEA crude oil
-WEO2025,IEA World Energy Outlook 2025,STEPS,2050,76,USD (MER, 2024),IEA crude oil
-WEO2025,IEA World Energy Outlook 2025,NZE,2035,33,USD (MER, 2024),IEA crude oil
-WEO2025,IEA World Energy Outlook 2025,NZE,2050,25,USD (MER, 2024),IEA crude oil
-EU_REF2020,EU Reference Scenario 2020,Reference,2020,39.8,USD per boe,International fuel prices assumptions (oil)
-EU_REF2020,EU Reference Scenario 2020,Reference,2025,59.9,USD per boe,International fuel prices assumptions (oil)
-EU_REF2020,EU Reference Scenario 2020,Reference,2030,80.1,USD per boe,International fuel prices assumptions (oil)
-EU_REF2020,EU Reference Scenario 2020,Reference,2035,90.4,USD per boe,International fuel prices assumptions (oil)
-EU_REF2020,EU Reference Scenario 2020,Reference,2040,97.4,USD per boe,International fuel prices assumptions (oil)
-EU_REF2020,EU Reference Scenario 2020,Reference,2045,105.6,USD per boe,International fuel prices assumptions (oil)
-EU_REF2020,EU Reference Scenario 2020,Reference,2050,117.9,USD per boe,International fuel prices assumptions (oil)
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.46,98.46,USD per bbl,Jun 26 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.54,92.72,USD per bbl,Jul 26 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.62,89.16,USD per bbl,Aug 26 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.71,86.86,USD per bbl,Sep 26 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.79,85.13,USD per bbl,Oct 26 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.87,83.80,USD per bbl,Nov 26 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.96,82.64,USD per bbl,Dec 26 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.04,81.61,USD per bbl,Jan 27 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.12,80.71,USD per bbl,Feb 27 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.21,79.94,USD per bbl,Mar 27 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.29,79.17,USD per bbl,Apr 27 contract
-BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.46,78.26,USD per bbl,Jun 27 contract
+source_group,publication,scenario,year,price_usd,price_basis,notes
+WEO2024,IEA World Energy Outlook 2024,STEPS,2023,82,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2024,IEA World Energy Outlook 2024,STEPS,2030,79,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2024,IEA World Energy Outlook 2024,STEPS,2040,77,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2024,IEA World Energy Outlook 2024,STEPS,2050,75,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2024,IEA World Energy Outlook 2024,APS,2030,72,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2024,IEA World Energy Outlook 2024,APS,2040,63,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2024,IEA World Energy Outlook 2024,APS,2050,58,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2024,IEA World Energy Outlook 2024,NZE,2030,42,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2024,IEA World Energy Outlook 2024,NZE,2040,30,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2024,IEA World Energy Outlook 2024,NZE,2050,25,"real, constant 2023 USD/bbl (MER)",IEA crude oil
+WEO2025,IEA World Energy Outlook 2025,CPS,2024,79,"real, constant 2024 USD/bbl (MER)",IEA crude oil
+WEO2025,IEA World Energy Outlook 2025,CPS,2035,89,"real, constant 2024 USD/bbl (MER)",IEA crude oil
+WEO2025,IEA World Energy Outlook 2025,CPS,2050,106,"real, constant 2024 USD/bbl (MER)",IEA crude oil
+WEO2025,IEA World Energy Outlook 2025,STEPS,2035,80,"real, constant 2024 USD/bbl (MER)",IEA crude oil
+WEO2025,IEA World Energy Outlook 2025,STEPS,2050,76,"real, constant 2024 USD/bbl (MER)",IEA crude oil
+WEO2025,IEA World Energy Outlook 2025,NZE,2035,33,"real, constant 2024 USD/bbl (MER)",IEA crude oil
+WEO2025,IEA World Energy Outlook 2025,NZE,2050,25,"real, constant 2024 USD/bbl (MER)",IEA crude oil
+EU_REF2020,EU Reference Scenario 2020,Reference,2020,39.8,"real, constant 2015 USD/boe",International fuel prices assumptions (oil)
+EU_REF2020,EU Reference Scenario 2020,Reference,2025,59.9,"real, constant 2015 USD/boe",International fuel prices assumptions (oil)
+EU_REF2020,EU Reference Scenario 2020,Reference,2030,80.1,"real, constant 2015 USD/boe",International fuel prices assumptions (oil)
+EU_REF2020,EU Reference Scenario 2020,Reference,2035,90.4,"real, constant 2015 USD/boe",International fuel prices assumptions (oil)
+EU_REF2020,EU Reference Scenario 2020,Reference,2040,97.4,"real, constant 2015 USD/boe",International fuel prices assumptions (oil)
+EU_REF2020,EU Reference Scenario 2020,Reference,2045,105.6,"real, constant 2015 USD/boe",International fuel prices assumptions (oil)
+EU_REF2020,EU Reference Scenario 2020,Reference,2050,117.9,"real, constant 2015 USD/boe",International fuel prices assumptions (oil)
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.46,98.46,nominal USD/bbl (market quote on 2026-04-14),Jun 26 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.54,92.72,nominal USD/bbl (market quote on 2026-04-14),Jul 26 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.62,89.16,nominal USD/bbl (market quote on 2026-04-14),Aug 26 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.71,86.86,nominal USD/bbl (market quote on 2026-04-14),Sep 26 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.79,85.13,nominal USD/bbl (market quote on 2026-04-14),Oct 26 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.87,83.80,nominal USD/bbl (market quote on 2026-04-14),Nov 26 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2026.96,82.64,nominal USD/bbl (market quote on 2026-04-14),Dec 26 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.04,81.61,nominal USD/bbl (market quote on 2026-04-14),Jan 27 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.12,80.71,nominal USD/bbl (market quote on 2026-04-14),Feb 27 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.21,79.94,nominal USD/bbl (market quote on 2026-04-14),Mar 27 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.29,79.17,nominal USD/bbl (market quote on 2026-04-14),Apr 27 contract
+BRENT_FUTURES,Investing.com Brent Futures Contracts,Curve as of 2026-04-14,2027.46,78.26,nominal USD/bbl (market quote on 2026-04-14),Jun 27 contract
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2015,52.32,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2016,43.64,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2017,54.13,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2018,71.34,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2019,64.3,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2020,41.96,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2021,70.86,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2022,100.93,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2023,82.49,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2024,80.52,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)
+HIST_EIA_BRENT,EIA Brent Spot via FRED (ACOILBRENTEU),Historical annual average,2025,69.14,nominal USD/bbl (annual average),EIA Brent Europe spot price annual average (via FRED)

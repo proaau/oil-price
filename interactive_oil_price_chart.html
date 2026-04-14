@@ -9,10 +9,11 @@
 </head>
 <body>
   <h2>Vergleich von Rohölpreisprojektionen</h2>
-  <p>Enthalten: WEO 2024 (STEPS/APS/NZE), WEO 2025 (CPS/STEPS/NZE), EU Reference Scenario 2020, Brent-Futures-Kurve (Stand: 14.04.2026).</p>
+  <p>Enthalten: Historische Brent-Jahresmittel ab 2015 (nominale USD/bbl), WEO 2024 (real, konstante 2023-USD/bbl), WEO 2025 (real, konstante 2024-USD/bbl), EU Reference Scenario 2020 (real, konstante 2015-USD/boe), Brent-Futures-Kurve (nominale USD/bbl, Stand: 14.04.2026).</p>
   <div id="chart"></div>
   <script>
 const rows = [
+  ["HIST_EIA_BRENT","Historical",2015,52.32],["HIST_EIA_BRENT","Historical",2016,43.64],["HIST_EIA_BRENT","Historical",2017,54.13],["HIST_EIA_BRENT","Historical",2018,71.34],["HIST_EIA_BRENT","Historical",2019,64.30],["HIST_EIA_BRENT","Historical",2020,41.96],["HIST_EIA_BRENT","Historical",2021,70.86],["HIST_EIA_BRENT","Historical",2022,100.93],["HIST_EIA_BRENT","Historical",2023,82.49],["HIST_EIA_BRENT","Historical",2024,80.52],["HIST_EIA_BRENT","Historical",2025,69.14],
   ["WEO2024","STEPS",2023,82],["WEO2024","STEPS",2030,79],["WEO2024","STEPS",2040,77],["WEO2024","STEPS",2050,75],
   ["WEO2024","APS",2030,72],["WEO2024","APS",2040,63],["WEO2024","APS",2050,58],
   ["WEO2024","NZE",2030,42],["WEO2024","NZE",2040,30],["WEO2024","NZE",2050,25],
@@ -29,7 +30,7 @@ const traces = groups.map(g=>{
   return {x:pts.map(p=>p[2]), y:pts.map(p=>p[3]), mode:'lines+markers', name:g};
 });
 Plotly.newPlot('chart', traces, {
-  xaxis:{title:'Jahr'}, yaxis:{title:'Preis (USD pro Barrel / boe)'}, hovermode:'x unified',
+  xaxis:{title:'Jahr'}, yaxis:{title:'Preis (gemischte Basis; siehe Untertitel)'}, hovermode:'x unified',
   legend:{orientation:'h', y:-0.2}, template:'plotly_white'
 });
   </script>
