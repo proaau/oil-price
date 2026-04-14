@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rohölpreisprojektionen – WEO 2024/2025, EU Reference, Brent Futures</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>body{font-family:Arial,sans-serif;margin:20px}#chart{height:75vh}</style>
+</head>
+<body>
+  <h2>Vergleich von Rohölpreisprojektionen</h2>
+  <p>Enthalten: Historische Brent-Jahresmittel ab 2015 (nominale USD/bbl), WEO 2024 (real, konstante 2023-USD/bbl), WEO 2025 (real, konstante 2024-USD/bbl), EU Reference Scenario 2020 (real, konstante 2015-USD/boe), Brent-Futures-Kurve (nominale USD/bbl, Stand: 14.04.2026).</p>
+  <div id="chart"></div>
+  <script>
+const rows = [
+  ["HIST_EIA_BRENT","Historical",2015,52.32],["HIST_EIA_BRENT","Historical",2016,43.64],["HIST_EIA_BRENT","Historical",2017,54.13],["HIST_EIA_BRENT","Historical",2018,71.34],["HIST_EIA_BRENT","Historical",2019,64.30],["HIST_EIA_BRENT","Historical",2020,41.96],["HIST_EIA_BRENT","Historical",2021,70.86],["HIST_EIA_BRENT","Historical",2022,100.93],["HIST_EIA_BRENT","Historical",2023,82.49],["HIST_EIA_BRENT","Historical",2024,80.52],["HIST_EIA_BRENT","Historical",2025,69.14],
+  ["WEO2024","STEPS",2023,82],["WEO2024","STEPS",2030,79],["WEO2024","STEPS",2040,77],["WEO2024","STEPS",2050,75],
+  ["WEO2024","APS",2030,72],["WEO2024","APS",2040,63],["WEO2024","APS",2050,58],
+  ["WEO2024","NZE",2030,42],["WEO2024","NZE",2040,30],["WEO2024","NZE",2050,25],
+  ["WEO2025","CPS",2024,79],["WEO2025","CPS",2035,89],["WEO2025","CPS",2050,106],
+  ["WEO2025","STEPS",2035,80],["WEO2025","STEPS",2050,76],
+  ["WEO2025","NZE",2035,33],["WEO2025","NZE",2050,25],
+  ["EU_REF2020","Reference",2020,39.8],["EU_REF2020","Reference",2025,59.9],["EU_REF2020","Reference",2030,80.1],["EU_REF2020","Reference",2035,90.4],["EU_REF2020","Reference",2040,97.4],["EU_REF2020","Reference",2045,105.6],["EU_REF2020","Reference",2050,117.9],
+  ["BRENT_FUTURES","Curve",2026.46,98.46],["BRENT_FUTURES","Curve",2026.54,92.72],["BRENT_FUTURES","Curve",2026.62,89.16],["BRENT_FUTURES","Curve",2026.71,86.86],["BRENT_FUTURES","Curve",2026.79,85.13],["BRENT_FUTURES","Curve",2026.87,83.80],["BRENT_FUTURES","Curve",2026.96,82.64],["BRENT_FUTURES","Curve",2027.04,81.61],["BRENT_FUTURES","Curve",2027.12,80.71],["BRENT_FUTURES","Curve",2027.21,79.94],["BRENT_FUTURES","Curve",2027.29,79.17],["BRENT_FUTURES","Curve",2027.46,78.26]
+];
+const groups = [...new Set(rows.map(r=>`${r[0]} ${r[1]}`))];
+const traces = groups.map(g=>{
+  const [pub,sc]=g.split(' ');
+  const pts = rows.filter(r=>r[0]===pub && r[1]===sc).sort((a,b)=>a[2]-b[2]);
+  return {x:pts.map(p=>p[2]), y:pts.map(p=>p[3]), mode:'lines+markers', name:g};
+});
+Plotly.newPlot('chart', traces, {
+  xaxis:{title:'Jahr'}, yaxis:{title:'Preis (gemischte Basis; siehe Untertitel)'}, hovermode:'x unified',
+  legend:{orientation:'h', y:-0.2}, template:'plotly_white'
+});
+  </script>
+</body>
+</html>
