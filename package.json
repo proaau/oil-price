@@ -1,0 +1,11 @@
+{
+  "name": "oil-outlook",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static Brent history and oil price scenario dashboard",
+  "scripts": {
+    "test": "node --test tests/core.test.cjs",
+    "build": "python3 -m scripts.build",
+    "check": "python3 -m scripts.build --check && python3 -m unittest discover -s tests -v && node --test tests/core.test.cjs"
+  }
+}
